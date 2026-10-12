@@ -78,4 +78,4 @@ Join parts with `+`. Lines starting with `#` are notes.
 ## Install
 
 Manifest URL:
-`https://github.com/TheAdamHayes/crit-formula/releases/latest/download/module.json`
+`https://github.com/TheAdamHayes/CritFormula/releases/latest/download/module.json`
