@@ -1,0 +1,172 @@
+.ah-critformula .window-content {
+  padding: 0;
+  overflow: hidden;
+}
+
+.ah-critformula .ahcf-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  padding: 10px 12px;
+  overflow: hidden;
+}
+
+.ah-critformula .ahcf-intro,
+.ah-critformula .ahcf-warning {
+  margin: 0;
+}
+.ah-critformula .ahcf-warning {
+  color: var(--color-level-warning, #c78a00);
+  font-weight: bold;
+}
+
+.ah-critformula .ahcf-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 14px;
+  flex: 1;
+  min-height: 0;
+}
+
+.ah-critformula section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.ah-critformula .ahcf-label {
+  font-weight: bold;
+  font-size: var(--font-size-13, 13px);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.ah-critformula textarea[name=formula] {
+  font-family: var(--font-monospace, monospace);
+  font-size: 13px;
+  line-height: 1.45;
+  min-height: 210px;
+  resize: vertical;
+  white-space: pre;
+}
+
+.ah-critformula .ahcf-status {
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.ah-critformula .ahcf-good {
+  color: var(--color-level-success, #2e8b3d);
+}
+.ah-critformula .ahcf-bad {
+  color: var(--color-level-error, #c0392b);
+}
+.ah-critformula .ahcf-status.ahcf-bad {
+  background: rgba(192, 57, 43, 0.1);
+}
+
+.ah-critformula .ahcf-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid var(--color-border, rgba(128, 128, 128, 0.4));
+  border-radius: 6px;
+}
+.ah-critformula .ahcf-sample-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 6px;
+}
+.ah-critformula .ahcf-sample-fields label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 2px;
+}
+.ah-critformula .ahcf-result > div {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+}
+.ah-critformula .ahcf-result code {
+  word-break: break-word;
+}
+.ah-critformula .ahcf-result em {
+  opacity: 0.75;
+  white-space: nowrap;
+}
+.ah-critformula .ahcf-result .ahcf-crit {
+  font-weight: bold;
+}
+.ah-critformula .ahcf-result .ahcf-bad {
+  display: block;
+  font-size: 12px;
+}
+
+.ah-critformula .ahcf-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.ah-critformula .ahcf-example,
+.ah-critformula .ahcf-chip {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border, rgba(128, 128, 128, 0.5));
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.ah-critformula .ahcf-chip {
+  font-family: var(--font-monospace, monospace);
+  font-weight: bold;
+}
+.ah-critformula .ahcf-example:hover,
+.ah-critformula .ahcf-chip:hover {
+  background: rgba(128, 128, 128, 0.18);
+  text-shadow: none;
+}
+
+.ah-critformula .ahcf-legend table {
+  margin: 0;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.ah-critformula .ahcf-legend td {
+  padding: 4px 6px;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+.ah-critformula .ahcf-legend td:first-child {
+  width: 1%;
+}
+.ah-critformula .ahcf-legend .ahcf-ex {
+  font-family: var(--font-monospace, monospace);
+  white-space: nowrap;
+  opacity: 0.8;
+}
+.ah-critformula .ahcf-note {
+  font-size: 12px;
+  opacity: 0.85;
+  margin: 4px 0 0;
+}
+
+.ah-critformula .ahcf-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+.ah-critformula .ahcf-buttons button {
+  flex: 0 0 auto;
+  width: auto;
+  padding: 0 12px;
+}
